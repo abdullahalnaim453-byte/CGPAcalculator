@@ -1,0 +1,56 @@
+<!--TODAY I WILL BE BUILDING ANOTHER CGPA CALCULATOR USING HTML,CSS AND JAVA SCRIPT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF=8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<title>CGPA CALCULATOR</title>
+</head>
+<body>
+<h1>EASY WAY TO CALCULATE CGPA</h1>
+<div class="container-1">
+<h2 class="header-1">BASED ON HSTU CGPA GRADING SHYSTEM </h2>
+<h2>
+<label for="courses" id="course-code">Course Code</label>
+<label for="course-unit" id="course-code">Course Credit</label>
+<label for="course-grade" id="course-grade">Course Grade</label>
+</h2>
+<div class="course-div">
+    <form class="get">
+<input type="text" placeholder="Enter the course code" class="courses" required>
+<input type="number" placeholder="Enter the Course credit" class="course-unit" required>
+<select class="grade" id="grades">
+<option value="select" class="grade">Select grade</option>
+<option value="A+" class="grade">A+</option>
+<option value="A" class="grade">A</option>
+<option value="A-" class="grade">A-</option>
+<option value="B+" class="grade">B+</option>
+<option value="B" class="grade">B</option>
+<option value="B-" class="grade">B-</option>
+<option value="C+" class="grade">C+</option>
+<option value="C-" class="grade">C-</option>
+<option value="D" class="grade">D</option>
+<option value="F" class="grade">F</option>
+</select>
+</form>
+</div>
+
+<div class="btn-div">
+    <button class="btn btn-primary" id="add-course">Add Course</button>
+    <button class="btn btn-danger" id="remove-course">Remove Course</button>
+    <button class="btn btn-primary" id="get-grade">Calculate</button>
+</div>
+<div class="result-div">
+    <h2 id="result">YOUR CGPA IS HERE:-</h2>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
