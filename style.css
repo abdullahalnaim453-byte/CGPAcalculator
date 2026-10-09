@@ -22,7 +22,7 @@ h2{
     color: red;
 }
 #course-code {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bolder;
     margin-left: 1%;
     color:rgb(7, 248, 23)
@@ -35,14 +35,14 @@ margin-left: 12%;
 color:rgb(9, 240, 25)
 }
 #course-grade {
-font-size: 15px;
+font-size: 20px;
 font-weight: bolder;
 margin-left: .5%;
 color:rgb(9, 240, 25)
 
 }
 .container-1{
-width: 100%;
+width: 90%;
 max-width: 450px;
 height: auto;
 border: 2px solid black;
@@ -151,3 +151,42 @@ font-weight: bolder;
     color: black;
 }
 
+/* ১. Global Box Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ২. Screen Width Lock & Vertical Scroll Only */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ডানে-বামে নড়াচড়া পুরোপুরি বন্ধ করবে */
+  overflow-y: auto;   /* ওপরে-নিচে স্বাভাবিকভাবে স্ক্রোল হবে */
+  -webkit-overflow-scrolling: touch; /* ফোনে স্মুথ স্ক্রোলিংয়ের জন্য */
+}
+
+/* ৩. কোর্স কার্ড, ছবি বা অন্য কোনো উপাদান যাতে স্ক্রিন থেকে ডানে বের না হয়ে যায় */
+img, video, iframe, .card, .course-item {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* বাটন ডিজাইন */
+.button-container button {
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 12px;         /* মোবাইল স্ক্রিনের জন্য উপযুক্ত সাইজ */
+  white-space: nowrap;      /* লেখা দুই লাইন হওয়া আটকাবে */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-card {
+  width: 92%;              /* মোবাইলের দুই পাশে ১০-১৫ পিক্সেল মার্জিন রাখবে */
+  max-width: 420px;        /* বড় স্ক্রিনে খুব বেশি ছড়াবে না */
+  margin: 20px auto;       /* ওপরে-নিচে মার্জিন দিয়ে সেন্টারে রাখবে */
+  box-sizing: border-box;
+}
