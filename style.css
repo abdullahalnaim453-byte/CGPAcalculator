@@ -6,15 +6,14 @@ box-sizing: border-box;
 
 }
 body {
-background image: url
+background-color: rgb(128, 209, 210);
+background-image: url(OIP.jpg);
 
 }
 
-
-color: rgb(112, 8, 248);
-font-family:arial, Helvetica, sans-serif;
-font-display: flex;
-
+.header-1{
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 h2{
     text-align: center;
@@ -23,10 +22,10 @@ h2{
     color: red;
 }
 #course-code {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     margin-left: 1%;
-    color:rgb(9, 240, 25)
+    color:rgb(7, 248, 23)
     
 }
 #course-unit {
@@ -36,18 +35,20 @@ margin-left: 12%;
 color:rgb(9, 240, 25)
 }
 #course-grade {
-font-size: 20px;
+font-size: 15px;
 font-weight: bolder;
 margin-left: .5%;
 color:rgb(9, 240, 25)
 
 }
 .container-1{
-width: 75%;
+width: 100%;
+max-width: 450px;
 height: auto;
 border: 2px solid black;
-margin: 100px auto;
+margin: 0 auto;
 background-color: rgb(143, 64, 131);
+
 }
 .header-1{
 padding: 15px;
@@ -56,7 +57,7 @@ font-size: 40px;
 text-align: center;
 border: 1px solid black;
 background-color: rgb(22, 179, 95);
-font-color:black;
+font-color:rgb(145, 7, 7);
 }
 h1 {
     text-align: center;
@@ -149,10 +150,4 @@ font-weight: bolder;
     background-color: rgb(219, 107, 55);
     color: black;
 }
-
-
-
-
-
-
 
